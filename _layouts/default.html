@@ -21,11 +21,10 @@
             background-color: var(--bg-body);
             color: var(--text-main);
             display: flex;
-            flex-direction: column; /* Cambiado para permitir header arriba */
+            flex-direction: column;
             min-height: 100vh;
         }
 
-        /* --- CABECERA SUPERIOR --- */
         header {
             width: 100%;
             height: 80px;
@@ -50,7 +49,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* --- CONTENEDOR PRINCIPAL --- */
         .wrapper {
             display: flex;
             flex-grow: 1;
@@ -59,9 +57,9 @@
         /* --- MENÚ LATERAL --- */
         nav {
             width: 280px;
-            background-color: rgba(15, 23, 42, 0.8);
+            background-color: rgba(15, 23, 42, 0.9);
             padding: 40px 20px;
-            height: calc(100vh - 80px); /* Restamos el header */
+            height: calc(100vh - 80px);
             position: sticky;
             top: 80px;
             box-sizing: border-box;
@@ -72,29 +70,65 @@
             font-size: 0.75rem;
             color: #64748b;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             padding-left: 10px;
         }
 
+        /* --- ANIMACIÓN DE REVELACIÓN DE AUTOR --- */
         .nav-link {
             text-decoration: none;
             display: flex;
             flex-direction: column;
-            padding: 12px 15px;
-            margin-bottom: 10px;
-            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 12px;
             background: rgba(255,255,255,0.02);
-            transition: 0.3s;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
         }
 
-        .nav-link b { font-size: 0.9rem; margin-bottom: 2px; }
-        .nav-link span { font-size: 0.7rem; opacity: 0.6; }
+        .nav-link b { 
+            font-size: 0.95rem; 
+            color: #cbd5e1;
+            transition: color 0.3s ease;
+        }
 
-        .m-link { border-left: 3px solid var(--accent-manuel); color: var(--accent-manuel); }
-        .j-link { border-left: 3px solid var(--accent-juanjo); color: var(--accent-juanjo); }
-        .s-link { border-left: 3px solid var(--accent-sergio); color: var(--accent-sergio); }
+        /* Ocultamos el autor inicialmente */
+        .nav-link span { 
+            font-size: 0.75rem; 
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+            opacity: 0; /* Invisible */
+            transform: translateY(10px); /* Desplazado hacia abajo */
+            transition: all 0.3s ease-in-out;
+        }
 
-        .nav-link:hover { transform: translateX(8px); background: rgba(255,255,255,0.05); }
+        /* Hover: Mostramos el autor y subimos el texto */
+        .nav-link:hover {
+            transform: scale(1.02);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .nav-link:hover span {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Colores específicos en Hover */
+        .m-link { border-left: 4px solid #334155; }
+        .m-link:hover { border-left-color: var(--accent-manuel); }
+        .m-link:hover b, .m-link span { color: var(--accent-manuel); }
+
+        .j-link { border-left: 4px solid #334155; }
+        .j-link:hover { border-left-color: var(--accent-juanjo); }
+        .j-link:hover b, .j-link span { color: var(--accent-juanjo); }
+
+        .s-link { border-left: 4px solid #334155; }
+        .s-link:hover { border-left-color: var(--accent-sergio); }
+        .s-link:hover b, .s-link span { color: var(--accent-sergio); }
 
         /* --- CONTENIDO --- */
         main {
@@ -111,9 +145,9 @@
             padding: 50px;
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            line-height: 1.8;
         }
 
-        /* --- RESPONSIVE --- */
         @media (max-width: 800px) {
             .wrapper { flex-direction: column; }
             nav { width: 100%; height: auto; position: relative; top: 0; }
@@ -132,38 +166,38 @@
             <h2>Índice de Secciones</h2>
             
             <a href="index.html" class="nav-link m-link">
-                <b>Inicio</b>
-                <span>Manuel</span>
+                <b>🏠 Inicio</b>
+                <span>Autor: Manuel</span>
             </a>
 
             <a href="riesgos-ergonomicos.html" class="nav-link m-link">
                 <b>Riesgos Ergonómicos</b>
-                <span>Manuel</span>
+                <span>Autor: Manuel</span>
             </a>
 
             <a href="riesgos-psicosociales.html" class="nav-link j-link">
                 <b>Riesgos Psicosociales</b>
-                <span>Juan José</span>
+                <span>Autor: Juan José</span>
             </a>
 
             <a href="prevencion.html" class="nav-link j-link">
                 <b>Prevención Informática</b>
-                <span>Juan José</span>
+                <span>Autor: Juan José</span>
             </a>
 
             <a href="seguridad-fisica.html" class="nav-link s-link">
                 <b>Seguridad Física</b>
-                <span>Sergio</span>
+                <span>Autor: Sergio</span>
             </a>
 
             <a href="riesgos-ambientales.html" class="nav-link s-link">
                 <b>Riesgos Ambientales</b>
-                <span>Sergio</span>
+                <span>Autor: Sergio</span>
             </a>
 
-            <a href="referencias.html" class="nav-link" style="border-left: 3px solid #94a3b8; color: #94a3b8;">
+            <a href="referencias.html" class="nav-link" style="border-left: 4px solid #334155;">
                 <b>Referencias</b>
-                <span>Equipo</span>
+                <span>Trabajo en Equipo</span>
             </a>
         </nav>
 
@@ -176,4 +210,3 @@
 
 </body>
 </html>
-
