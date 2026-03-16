@@ -1,1 +1,171 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Seguridad Informática Laboral</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #f8fafc;
+            --sidebar-dark: #0f172a;
+            --accent-manuel: #3b82f6; /* Azul seguridad */
+            --accent-juanjo: #10b981;  /* Verde ergonomía */
+            --accent-sergio: #f59e0b;  /* Ámbar prevención */
+            --text-main: #1e293b;
+            --glass-bg: rgba(255, 255, 255, 0.8);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            min-height: 100vh;
+        }
+
+        /* --- BARRA LATERAL (Sidebar) --- */
+        nav {
+            width: 280px;
+            background-color: var(--sidebar-dark);
+            position: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            color: white;
+            box-shadow: 4px 0 24px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-weight: 800;
+            font-size: 1.2rem;
+            padding-bottom: 30px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav ul { list-style: none; padding: 0; margin: 0; }
+        nav ul li { margin-bottom: 12px; }
+
+        nav ul li a {
+            color: #94a3b8;
+            text-decoration: none;
+            display: block;
+            padding: 14px 18px;
+            border-radius: 12px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Efectos Hover Personalizados */
+        .nav-manuel:hover { background: rgba(59, 130, 246, 0.15); color: var(--accent-manuel); transform: translateX(5px); }
+        .nav-juanjo:hover { background: rgba(16, 185, 129, 0.15); color: var(--accent-juanjo); transform: translateX(5px); }
+        .nav-sergio:hover { background: rgba(245, 158, 11, 0.15); color: var(--accent-sergio); transform: translateX(5px); }
+        .nav-home:hover { background: rgba(255,255,255,0.05); color: white; }
+
+        /* --- CONTENIDO PRINCIPAL --- */
+        main {
+            margin-left: 280px;
+            margin-right: 80px;
+            flex-grow: 1;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content-container {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            padding: 60px;
+            border-radius: 32px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.05);
+            line-height: 1.7;
+        }
+
+        .content-container h1 {
+            font-weight: 800;
+            font-size: 2.5rem;
+            margin-top: 0;
+            background: linear-gradient(to right, #1e293b, #64748b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* --- PANEL DE AUTORES (Derecha Estilizada) --- */
+        aside {
+            width: 80px;
+            position: fixed;
+            right: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            padding-right: 20px;
+        }
+
+        .author-tag {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            padding: 20px 10px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .tag-manuel { border-left: 4px solid var(--accent-manuel); color: var(--accent-manuel); }
+        .tag-juanjo { border-left: 4px solid var(--accent-juanjo); color: var(--accent-juanjo); }
+        .tag-sergio { border-left: 4px solid var(--accent-sergio); color: var(--accent-sergio); }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 1024px) {
+            nav { width: 80px; padding: 20px 10px; }
+            nav h1, nav ul li a span { display: none; }
+            main { margin-left: 80px; margin-right: 0; padding: 20px; }
+            aside { display: none; }
+            .content-container { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">🛡️ <span>Prevención IT</span></div>
+        <ul>
+            <li><a href="index.html" class="nav-home"><span>Inicio</span></a></li>
+            <li><a href="Manuel_ergonomia.html" class="nav-manuel"><span>Ergonomía (Manuel)</span></a></li>
+            <li><a href="Juanjo_entorno.html" class="nav-juanjo"><span>Entorno (Juan José)</span></a></li>
+            <li><a href="Sergio_psicosocial.html" class="nav-sergio"><span>Salud Mental (Sergio)</span></a></li>
+            <li><a href="referencias.html" class="nav-home"><span>Referencias</span></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="content-container">
+            {{ content }}
+        </article>
+    </main>
+
+    <aside>
+        <div class="author-tag tag-manuel">Manuel</div>
+        <div class="author-tag tag-juanjo">Juan José</div>
+        <div class="author-tag tag-sergio">Sergio</div>
+    </aside>
+
+</body>
+</html>
