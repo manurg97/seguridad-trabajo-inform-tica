@@ -13,14 +13,11 @@
             --accent-manuel: #38bdf8;
             --accent-juanjo: #4ade80;
             --accent-sergio: #fb923c;
-            --marca-red: #e20613; /* Color acento tipo prensa */
         }
-
-        html { scroll-behavior: smooth; }
 
         body {
             margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background-color: var(--bg-body);
             color: var(--text-main);
             display: flex;
@@ -31,146 +28,177 @@
         /* --- HEADER --- */
         header {
             width: 100%;
-            height: 70px;
+            height: 80px;
             background-color: var(--header-bg);
             display: flex;
             align-items: center;
             justify-content: center;
-            border-bottom: 3px solid var(--marca-red);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
 
         header h1 {
             margin: 0;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            font-weight: 900;
-            letter-spacing: -0.5px;
+            background: linear-gradient(90deg, var(--accent-manuel), var(--accent-juanjo), var(--accent-sergio));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .wrapper { display: flex; flex-grow: 1; }
-
-        /* --- SIDEBAR --- */
-        nav.sidebar {
-            width: 260px;
-            background-color: rgba(15, 23, 42, 0.95);
-            padding: 20px;
-            height: calc(100vh - 70px);
+        /* --- ÍNDICE HORIZONTAL (Estilo Marca) --- */
+        .horizontal-nav {
+            width: 100%;
+            background-color: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
             position: sticky;
-            top: 70px;
-            border-right: 1px solid rgba(255,255,255,0.1);
+            top: 80px; /* Justo debajo del header */
+            z-index: 1000;
+            overflow-x: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-container {
+            display: flex;
+            padding: 10px 20px;
+            gap: 15px;
+            max-width: 1200px;
         }
 
         .nav-link {
             text-decoration: none;
-            display: block;
-            padding: 12px;
-            margin-bottom: 8px;
-            border-radius: 6px;
-            background: rgba(255,255,255,0.03);
-            color: #cbd5e1;
-            font-size: 0.9rem;
-            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            padding: 8px 15px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.02);
+            transition: all 0.3s ease;
+            min-width: 140px;
+            border-bottom: 3px solid #334155;
         }
 
-        .nav-link:hover { background: var(--marca-red); color: white; }
-
-        /* --- ÍNDICE ESTILO MARCA (HORIZONTAL) --- */
-        .marca-index {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 20px 0 30px 0;
-            padding: 10px 0;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            overflow-x: auto; /* Por si hay muchos links en móvil */
+        .nav-link b { 
+            font-size: 0.85rem; 
+            color: #cbd5e1;
             white-space: nowrap;
         }
 
-        .marca-index span {
-            font-weight: 800;
+        .nav-link span { 
+            font-size: 0.65rem; 
+            font-weight: bold;
             text-transform: uppercase;
-            font-size: 0.75rem;
-            color: var(--marca-red);
-            padding-right: 10px;
+            margin-top: 2px;
+            opacity: 0;
+            transform: translateY(5px);
+            transition: all 0.2s ease;
         }
 
-        .marca-index ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            gap: 8px;
+        .nav-link:hover {
+            background: rgba(255,255,255,0.05);
+            transform: translateY(-2px);
         }
 
-        .marca-index li a {
-            text-decoration: none;
-            color: var(--text-main);
-            background: rgba(255,255,255,0.1);
-            padding: 6px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            transition: all 0.2s;
-            border: 1px solid transparent;
+        .nav-link:hover span {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        .marca-index li a:hover {
-            background: transparent;
-            border-color: var(--marca-red);
-            color: var(--marca-red);
-        }
+        /* Colores de los autores */
+        .m-link:hover { border-bottom-color: var(--accent-manuel); }
+        .m-link:hover b, .m-link span { color: var(--accent-manuel); }
+
+        .j-link:hover { border-bottom-color: var(--accent-juanjo); }
+        .j-link:hover b, .j-link span { color: var(--accent-juanjo); }
+
+        .s-link:hover { border-bottom-color: var(--accent-sergio); }
+        .s-link:hover b, .s-link span { color: var(--accent-sergio); }
 
         /* --- CONTENIDO --- */
-        main { flex-grow: 1; padding: 40px; display: flex; justify-content: center; }
-        
-        .content-area {
+        .wrapper {
+            display: flex;
+            justify-content: center;
             width: 100%;
-            max-width: 900px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1000px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        .content-area {
             background: var(--bg-card);
-            padding: 40px;
-            border-radius: 8px;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            line-height: 1.8;
         }
 
-        .page-title {
-            font-size: 2.5rem;
-            line-height: 1.1;
-            font-weight: 800;
-            margin: 0 0 10px 0;
-        }
-
+        /* --- RESPONSIVE --- */
         @media (max-width: 800px) {
-            .wrapper { flex-direction: column; }
-            nav.sidebar { width: 100%; height: auto; position: relative; top: 0; }
+            .horizontal-nav { justify-content: flex-start; }
+            .content-area { padding: 30px; }
+            header h1 { font-size: 1.1rem; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>SEGURIDAD <span style="color: var(--marca-red);">INFO</span></h1>
+        <h1><strong>Seguridad y Salud Informática<strong></h1>
     </header>
 
-    <div class="wrapper">
-        <nav class="sidebar">
-            <p style="font-size: 0.7rem; color: #64748b; font-weight: bold; text-transform: uppercase;">Menú Principal</p>
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="riesgos-ergonomicos.html" class="nav-link">Ergonomía</a>
-            <a href="riesgos-psicosociales.html" class="nav-link">Psicosociales</a>
-            <a href="prevencion.html" class="nav-link">Prevención</a>
-            <a href="seguridad-fisica.html" class="nav-link">Seguridad Física</a>
-        </nav>
+    <nav class="horizontal-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link m-link">
+                <b>Inicio</b>
+                <span>Manuel</span>
+            </a>
 
+            <a href="riesgos-ergonomicos.html" class="nav-link m-link">
+                <b>Ergonomía</b>
+                <span>Manuel</span>
+            </a>
+
+            <a href="riesgos-psicosociales.html" class="nav-link j-link">
+                <b>R. Psicosociales</b>
+                <span>Juan José</span>
+            </a>
+
+            <a href="prevencion.html" class="nav-link j-link">
+                <b>Prevención</b>
+                <span>Juan José</span>
+            </a>
+
+            <a href="seguridad-fisica.html" class="nav-link s-link">
+                <b>Seguridad Física</b>
+                <span>Sergio</span>
+            </a>
+
+            <a href="riesgos-ambientales.html" class="nav-link s-link">
+                <b>R. Ambientales</b>
+                <span>Sergio</span>
+            </a>
+
+            <a href="referencias.html" class="nav-link" style="border-bottom-color: #64748b;">
+                <b>Referencias</b>
+                <span>Equipo</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="wrapper">
         <main>
             <article class="content-area">
-                <h1 class="page-title">{{ page.title }}</h1>
-
-                <div class="main-text">
-                    {{ content }}
-                </div>
+                <h1 style="margin-top: 0; font-size: 2rem;">{{ page.title }}</h1>
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 30px;">
+                {{ content }}
             </article>
         </main>
     </div>
