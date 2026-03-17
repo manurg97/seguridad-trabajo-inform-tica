@@ -15,11 +15,11 @@ title: Inicio
 ---
 
 ### 📌 Sobre este proyecto
-Este portal ha sido diseñado como una guía técnica para profesionales y estudiantes del sector IT. Nuestro objetivo es concienciar sobre la importancia de un entorno de trabajo seguro, abordando desde la salud física hasta la seguridad de las infraestructuras.
+Este portal ha sido diseñado como una guía técnica para profesionales y estudiantes del sector IT. Nuestro objetivo es concienciar sobre la importancia de un entorno de trabajo seguro, abordando desde la salud física hasta la seguridad de las infraestructuras y la normativa vigente.
 
 ### 🗂️ Bloques de Contenido
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
     
     <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #38bdf8;">
         <h4 style="margin-top:0; color: #38bdf8;">💻 Ergonomía</h4>
@@ -30,6 +30,12 @@ Este portal ha sido diseñado como una guía técnica para profesionales y estud
     <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #4ade80;">
         <h4 style="margin-top:0; color: #4ade80;">🧠 Psicosociales</h4>
         <p style="font-size: 0.9rem;">Gestión del estrés laboral, burnout y carga mental en el desarrollo.</p>
+        <small><i>Por: Juan José</i></small>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #4ade80;">
+        <h4 style="margin-top:0; color: #4ade80;">🛡️ Prevención</h4>
+        <p style="font-size: 0.9rem;">Protocolos de seguridad, normativas y medidas de protección técnica.</p>
         <small><i>Por: Juan José</i></small>
     </div>
 
@@ -46,4 +52,4 @@ Este portal ha sido diseñado como una guía técnica para profesionales y estud
 ### 🚀 Acceso Rápido
 Utiliza la **barra de navegación superior** para explorar cada artículo detalladamente. Cada sección contiene medidas preventivas específicas y recomendaciones basadas en la normativa vigente de seguridad laboral.
 
-> **Nota del Equipo:** Este trabajo es colaborativo. Puedes consultar la bibliografía completa en la sección de [Referencias](referencias.html).
+> **Trabajo en equipo:** Consulta la bibliografía y fuentes utilizadas en la sección de [Referencias](referencias.html).
