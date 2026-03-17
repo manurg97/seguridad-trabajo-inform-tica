@@ -22,10 +22,10 @@ Este portal ha sido diseñado como una guía técnica para profesionales y estud
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px;">
     
     <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #38bdf8; display: flex; flex-direction: column; justify-content: space-between;">
-         <a href="ergonomia.html" class="card">
+         <div>
             <h4 style="margin-top:0; color: #38bdf8;">💻 Ergonomía</h4>
             <p style="font-size: 0.9rem;">Análisis de posturas, mobiliario y fatiga visual en el puesto informático.</p>
-        </a>
+        </div>
         <small><i>Por: Manuel</i></small>
     </div>
 
