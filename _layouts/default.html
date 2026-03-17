@@ -13,16 +13,14 @@
             --accent-manuel: #38bdf8;
             --accent-juanjo: #4ade80;
             --accent-sergio: #fb923c;
+            --marca-red: #e20613; /* Color acento tipo prensa */
         }
 
-        /* --- CONFIGURACIÓN BASE --- */
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             margin: 0;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             background-color: var(--bg-body);
             color: var(--text-main);
             display: flex;
@@ -30,15 +28,15 @@
             min-height: 100vh;
         }
 
+        /* --- HEADER --- */
         header {
             width: 100%;
-            height: 80px;
+            height: 70px;
             background-color: var(--header-bg);
             display: flex;
             align-items: center;
             justify-content: center;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            border-bottom: 3px solid var(--marca-red);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -46,230 +44,137 @@
 
         header h1 {
             margin: 0;
-            font-size: 1.5rem;
-            letter-spacing: 2px;
+            font-size: 1.2rem;
             text-transform: uppercase;
-            background: linear-gradient(90deg, var(--accent-manuel), var(--accent-juanjo), var(--accent-sergio));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            letter-spacing: -0.5px;
         }
 
-        .wrapper {
-            display: flex;
-            flex-grow: 1;
-        }
+        .wrapper { display: flex; flex-grow: 1; }
 
-        /* --- MENÚ LATERAL --- */
+        /* --- SIDEBAR --- */
         nav.sidebar {
-            width: 280px;
-            background-color: rgba(15, 23, 42, 0.9);
-            padding: 40px 20px;
-            height: calc(100vh - 80px);
+            width: 260px;
+            background-color: rgba(15, 23, 42, 0.95);
+            padding: 20px;
+            height: calc(100vh - 70px);
             position: sticky;
-            top: 80px;
-            box-sizing: border-box;
-            border-right: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        nav.sidebar h2 {
-            font-size: 0.75rem;
-            color: #64748b;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-            padding-left: 10px;
+            top: 70px;
+            border-right: 1px solid rgba(255,255,255,0.1);
         }
 
         .nav-link {
             text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            padding: 15px;
-            margin-bottom: 12px;
-            border-radius: 12px;
-            background: rgba(255,255,255,0.02);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .nav-link b { 
-            font-size: 0.95rem; 
+            display: block;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.03);
             color: #cbd5e1;
-            transition: color 0.3s ease;
+            font-size: 0.9rem;
+            transition: 0.3s;
         }
 
-        .nav-link span { 
-            font-size: 0.75rem; 
-            font-weight: bold;
+        .nav-link:hover { background: var(--marca-red); color: white; }
+
+        /* --- ÍNDICE ESTILO MARCA (HORIZONTAL) --- */
+        .marca-index {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0 30px 0;
+            padding: 10px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            overflow-x: auto; /* Por si hay muchos links en móvil */
+            white-space: nowrap;
+        }
+
+        .marca-index span {
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 5px;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: all 0.3s ease-in-out;
+            font-size: 0.75rem;
+            color: var(--marca-red);
+            padding-right: 10px;
         }
 
-        .nav-link:hover {
-            transform: scale(1.02);
-            background: rgba(255,255,255,0.05);
-        }
-
-        .nav-link:hover span {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .m-link { border-left: 4px solid #334155; }
-        .m-link:hover { border-left-color: var(--accent-manuel); }
-        .m-link:hover b, .m-link span { color: var(--accent-manuel); }
-
-        .j-link { border-left: 4px solid #334155; }
-        .j-link:hover { border-left-color: var(--accent-juanjo); }
-        .j-link:hover b, .j-link span { color: var(--accent-juanjo); }
-
-        .s-link { border-left: 4px solid #334155; }
-        .s-link:hover { border-left-color: var(--accent-sergio); }
-        .s-link:hover b, .s-link span { color: var(--accent-sergio); }
-
-        /* --- ÍNDICE DE CONTENIDO (DENTRO DEL ARTÍCULO) --- */
-        .page-toc {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 15px;
-            padding: 25px;
-            margin: 30px 0;
-        }
-
-        .page-toc h3 {
-            margin-top: 0;
-            font-size: 0.85rem;
-            color: #64748b;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-
-        .page-toc ul {
+        .marca-index ul {
+            display: flex;
             list-style: none;
             padding: 0;
             margin: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 12px;
+            gap: 8px;
         }
 
-        .page-toc a {
-            color: #cbd5e1;
+        .marca-index li a {
             text-decoration: none;
-            font-size: 0.95rem;
-            display: flex;
-            align-items: center;
-            transition: transform 0.2s, color 0.2s;
+            color: var(--text-main);
+            background: rgba(255,255,255,0.1);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            border: 1px solid transparent;
         }
 
-        .page-toc a::before {
-            content: "→";
-            margin-right: 8px;
-            color: var(--accent-juanjo);
-            font-weight: bold;
+        .marca-index li a:hover {
+            background: transparent;
+            border-color: var(--marca-red);
+            color: var(--marca-red);
         }
 
-        .page-toc a:hover {
-            color: #fff;
-            transform: translateX(5px);
-        }
-
-        /* --- CONTENIDO PRINCIPAL --- */
-        main {
-            flex-grow: 1;
-            padding: 50px;
-            display: flex;
-            justify-content: center;
-        }
-
+        /* --- CONTENIDO --- */
+        main { flex-grow: 1; padding: 40px; display: flex; justify-content: center; }
+        
         .content-area {
             width: 100%;
-            max-width: 850px;
+            max-width: 900px;
             background: var(--bg-card);
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-            line-height: 1.8;
+            padding: 40px;
+            border-radius: 8px;
         }
 
-        .content-area h1.page-title {
-            margin-top: 0;
-            font-size: 2.2rem;
-            color: var(--text-main);
+        .page-title {
+            font-size: 2.5rem;
+            line-height: 1.1;
+            font-weight: 800;
+            margin: 0 0 10px 0;
         }
 
         @media (max-width: 800px) {
             .wrapper { flex-direction: column; }
-            nav.sidebar { width: 100%; height: auto; position: relative; top: 0; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.05); }
-            main { padding: 20px; }
-            .content-area { padding: 30px; }
+            nav.sidebar { width: 100%; height: auto; position: relative; top: 0; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Seguridad y Salud Informática</h1>
+        <h1>SEGURIDAD <span style="color: var(--marca-red);">INFO</span></h1>
     </header>
 
     <div class="wrapper">
         <nav class="sidebar">
-            <h2>Índice de Secciones</h2>
-            
-            <a href="index.html" class="nav-link m-link">
-                <b>Inicio</b>
-                <span>Autor: Manuel</span>
-            </a>
-
-            <a href="riesgos-ergonomicos.html" class="nav-link m-link">
-                <b>Riesgos Ergonómicos</b>
-                <span>Autor: Manuel</span>
-            </a>
-
-            <a href="riesgos-psicosociales.html" class="nav-link j-link">
-                <b>Riesgos Psicosociales</b>
-                <span>Autor: Juan José</span>
-            </a>
-
-            <a href="prevencion.html" class="nav-link j-link">
-                <b>Prevención Informática</b>
-                <span>Autor: Juan José</span>
-            </a>
-
-            <a href="seguridad-fisica.html" class="nav-link s-link">
-                <b>Seguridad Física</b>
-                <span>Autor: Sergio</span>
-            </a>
-
-            <a href="riesgos-ambientales.html" class="nav-link s-link">
-                <b>Riesgos Ambientales</b>
-                <span>Autor: Sergio</span>
-            </a>
-
-            <a href="referencias.html" class="nav-link" style="border-left: 4px solid #334155;">
-                <b>Referencias</b>
-                <span>Trabajo en Equipo</span>
-            </a>
+            <p style="font-size: 0.7rem; color: #64748b; font-weight: bold; text-transform: uppercase;">Menú Principal</p>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="riesgos-ergonomicos.html" class="nav-link">Ergonomía</a>
+            <a href="riesgos-psicosociales.html" class="nav-link">Psicosociales</a>
+            <a href="prevencion.html" class="nav-link">Prevención</a>
+            <a href="seguridad-fisica.html" class="nav-link">Seguridad Física</a>
         </nav>
 
         <main>
             <article class="content-area">
                 <h1 class="page-title">{{ page.title }}</h1>
-
-                <nav class="page-toc">
-                    <h3>En esta página:</h3>
+                
+                <nav class="marca-index">
+                    <span>EN ESTA SECCIÓN:</span>
                     <ul>
-                        <li><a href="#introduccion">Introducción</a></li>
-                        <li><a href="#analisis">Análisis del Riesgo</a></li>
-                        <li><a href="#medidas">Medidas de Salud</a></li>
-                        <li><a href="#conclusiones">Conclusiones</a></li>
+                        <li><a href="#claves">CLAVES</a></li>
+                        <li><a href="#analisis">ANÁLISIS</a></li>
+                        <li><a href="#prevencion">PREVENCIÓN</a></li>
+                        <li><a href="#datos">DATOS</a></li>
                     </ul>
                 </nav>
 
