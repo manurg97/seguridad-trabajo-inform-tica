@@ -15,6 +15,11 @@
             --accent-sergio: #fb923c;
         }
 
+        /* --- CONFIGURACIÓN BASE --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -55,7 +60,7 @@
         }
 
         /* --- MENÚ LATERAL --- */
-        nav {
+        nav.sidebar {
             width: 280px;
             background-color: rgba(15, 23, 42, 0.9);
             padding: 40px 20px;
@@ -66,7 +71,7 @@
             border-right: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        nav h2 {
+        nav.sidebar h2 {
             font-size: 0.75rem;
             color: #64748b;
             text-transform: uppercase;
@@ -74,7 +79,6 @@
             padding-left: 10px;
         }
 
-        /* --- ANIMACIÓN DE REVELACIÓN DE AUTOR --- */
         .nav-link {
             text-decoration: none;
             display: flex;
@@ -94,19 +98,17 @@
             transition: color 0.3s ease;
         }
 
-        /* Ocultamos el autor inicialmente */
         .nav-link span { 
             font-size: 0.75rem; 
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-top: 5px;
-            opacity: 0; /* Invisible */
-            transform: translateY(10px); /* Desplazado hacia abajo */
+            opacity: 0;
+            transform: translateY(10px);
             transition: all 0.3s ease-in-out;
         }
 
-        /* Hover: Mostramos el autor y subimos el texto */
         .nav-link:hover {
             transform: scale(1.02);
             background: rgba(255,255,255,0.05);
@@ -117,7 +119,6 @@
             transform: translateY(0);
         }
 
-        /* Colores específicos en Hover */
         .m-link { border-left: 4px solid #334155; }
         .m-link:hover { border-left-color: var(--accent-manuel); }
         .m-link:hover b, .m-link span { color: var(--accent-manuel); }
@@ -130,7 +131,57 @@
         .s-link:hover { border-left-color: var(--accent-sergio); }
         .s-link:hover b, .s-link span { color: var(--accent-sergio); }
 
-        /* --- CONTENIDO --- */
+        /* --- ÍNDICE DE CONTENIDO (DENTRO DEL ARTÍCULO) --- */
+        .page-toc {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .page-toc h3 {
+            margin-top: 0;
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .page-toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        .page-toc a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s, color 0.2s;
+        }
+
+        .page-toc a::before {
+            content: "→";
+            margin-right: 8px;
+            color: var(--accent-juanjo);
+            font-weight: bold;
+        }
+
+        .page-toc a:hover {
+            color: #fff;
+            transform: translateX(5px);
+        }
+
+        /* --- CONTENIDO PRINCIPAL --- */
         main {
             flex-grow: 1;
             padding: 50px;
@@ -148,21 +199,28 @@
             line-height: 1.8;
         }
 
+        .content-area h1.page-title {
+            margin-top: 0;
+            font-size: 2.2rem;
+            color: var(--text-main);
+        }
+
         @media (max-width: 800px) {
             .wrapper { flex-direction: column; }
-            nav { width: 100%; height: auto; position: relative; top: 0; }
+            nav.sidebar { width: 100%; height: auto; position: relative; top: 0; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.05); }
             main { padding: 20px; }
+            .content-area { padding: 30px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1><strong>Seguridad y Salud en el Trabajo Informático<strong></h1>
+        <h1>Seguridad y Salud Informática</h1>
     </header>
 
     <div class="wrapper">
-        <nav>
+        <nav class="sidebar">
             <h2>Índice de Secciones</h2>
             
             <a href="index.html" class="nav-link m-link">
@@ -203,7 +261,21 @@
 
         <main>
             <article class="content-area">
-                {{ content }}
+                <h1 class="page-title">{{ page.title }}</h1>
+
+                <nav class="page-toc">
+                    <h3>En esta página:</h3>
+                    <ul>
+                        <li><a href="#introduccion">Introducción</a></li>
+                        <li><a href="#analisis">Análisis del Riesgo</a></li>
+                        <li><a href="#medidas">Medidas de Salud</a></li>
+                        <li><a href="#conclusiones">Conclusiones</a></li>
+                    </ul>
+                </nav>
+
+                <div class="main-text">
+                    {{ content }}
+                </div>
             </article>
         </main>
     </div>
