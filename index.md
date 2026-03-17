@@ -25,7 +25,6 @@ Este portal ha sido diseñado como una guía técnica para profesionales y estud
         <div>
             <h4 style="margin-top:0; color: #38bdf8;">💻 Ergonomía</h4>
             <p style="font-size: 0.9rem;">Análisis de posturas, mobiliario y fatiga visual en el puesto informático.</p>
-             <a href="ergonomia.html" class="nav-link m-link">
         </div>
         <small><i>Por: Manuel</i></small>
     </div>
