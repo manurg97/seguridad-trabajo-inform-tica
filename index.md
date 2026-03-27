@@ -19,8 +19,6 @@ Este portal ha sido diseñado como una guía técnica para profesionales y estud
 
 ### 🗂️ Bloques de Contenido
 
-### 🗂️ Bloques de Contenido
-
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px;">
     
     <a href="ergonomia.html" style="text-decoration: none; color: inherit; display: flex;">
@@ -83,9 +81,7 @@ Este portal ha sido diseñado como una guía técnica para profesionales y estud
     </a>
 
     </div>
----
 
     <div style="text-align: center; margin: 40px 0;">
-        <img src="1.jpeg" alt="Programador trabajando con luz adecuada" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-        <p style="font-size: 0.9rem; color: #64748b; margin-top: 10px;">La iluminación debe ser cenital o lateral, evitando reflejos directos sobre la superficie de la pantalla.</p>
+        <img src= "1.jpeg" alt="Programador trabajando con luz adecuada" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
     </div>
