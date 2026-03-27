@@ -53,36 +53,47 @@ title: Riesgos Ergonómicos en el Sector Informático
                 <li><strong>Deslumbramiento:</strong> Los reflejos de ventanas o luces mal situadas fuerzan la vista y provocan fatiga prematura.</li>
             </ul>
         </div>
-    <h2 style="color: var(--accent-manuel);">3. Diseño Ergonómico del Hardware y Mobiliario</h2>
-    <p>Para mitigar estos riesgos, debemos considerar el equipo como una herramienta de salud, no solo de productividad.</p>
+    <h2 style="color: var(--accent-manuel);">3.Factores de Riesgo Ambientales y Organizativos</h2>
+    <p>Muchas veces nos centramos solo en la silla, pero el entorno físico y la organización del tiempo son determinantes para evitar la fatiga crónica. Estos factores suelen ser ignorados, pero impactan directamente en la salud ergonómica del informático:</p>
 
-    <h3>A. La Silla Ergonómica Profesional</h3>
-    <p>Debe ser el elemento más caro de tu oficina. Requisitos indispensables:</p>
-    <ul>
-        <li><strong>Soporte Lumbar Regulable:</strong> Debe ajustarse a la altura de las vértebras L1-L5.</li>
-        <li><strong>Profundidad del asiento:</strong> Debe permitir dejar un espacio de 2-3 dedos entre el borde del asiento y la parte posterior de la rodilla (hueco poplíteo).</li>
-        <li><strong>Material transpirable:</strong> Tipo "mesh" para evitar la acumulación de calor corporal.</li>
-    </ul>
+    <div style="overflow-x: auto; margin: 30px 0;">
+    <table style="width: 100%; border-collapse: collapse; background: rgba(30, 41, 59, 0.3); border-radius: 12px; overflow: hidden;">
+        <thead>
+            <tr style="background-color: rgba(56, 189, 248, 0.2); color: var(--accent-manuel);">
+                <th style="padding: 15px; text-align: left; border-bottom: 2px solid var(--accent-manuel);">Factor</th>
+                <th style="padding: 15px; text-align: left; border-bottom: 2px solid var(--accent-manuel);">Riesgo Ergonómico</th>
+                <th style="padding: 15px; text-align: left; border-bottom: 2px solid var(--accent-manuel);">Solución Ideal / Prevención</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Iluminación</strong></td>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Brillos en pantalla, deslumbramientos y sombras que fuerzan posturas raras de cuello para poder leer.</td>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Uso de luz natural lateral respecto a la pantalla. Evitar fluorescentes directos y usar filtros antirreflejantes.</td>
+            </tr>
+            <tr style="background: rgba(255,255,255,0.02);">
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Temperatura</strong></td>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">El frío excesivo provoca rigidez muscular y contracturas; el calor reduce la concentración y causa somnolencia.</td>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Mantener una temperatura operativa estable entre <strong>20°C y 24°C</strong> con una humedad relativa del 45-60%.</td>
+            </tr>
+            <tr>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Sedentarismo</strong></td>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Problemas circulatorios, síndrome de piernas cansadas y debilitamiento de la musculatura del "core".</td>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Implementar <strong>pausas activas</strong> cada 60 min, uso de reposapiés y, si es posible, alternar con escritorios regulables.</td>
+            </tr>
+            <tr style="background: rgba(255,255,255,0.02);">
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Ruido</strong></td>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Niveles superiores a 55 dB en oficinas provocan estrés, aumento de la tensión arterial y fatiga mental.</td>
+                <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Acondicionamiento acústico o uso de auriculares con cancelación de ruido en entornos de Open Office.</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
 
-    <h3>B. Periféricos de Entrada</h3>
-    <p>El teclado estándar plano obliga a una <strong>pronación forzada</strong> del antebrazo. El uso de teclados mecánicos con *layout* dividido (split) permite que los hombros descansen en su posición natural.</p>
-
-    <h2 style="color: var(--accent-manuel);">4. Guía de Estiramientos para Desarrolladores</h2>
-    <p>Se recomienda realizar una rutina de 5 minutos por cada 2 horas de programación intensa:</p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 25px 0;">
-        <div style="border: 1px solid rgba(255,255,255,0.1); padding: 15px; border-radius: 10px;">
-            <strong>Manos:</strong> Estira el brazo y tira de los dedos hacia atrás durante 15 segundos. Repite con la otra mano.
-        </div>
-        <div style="border: 1px solid rgba(255,255,255,0.1); padding: 15px; border-radius: 10px;">
-            <strong>Cuello:</strong> Baja la barbilla al pecho y realiza giros lentos de 180 grados de hombro a hombro.
-        </div>
-        <div style="border: 1px solid rgba(255,255,255,0.1); padding: 15px; border-radius: 10px;">
-            <strong>Hombros:</strong> Súbelos hacia las orejas, mantén la tensión 3 segundos y suelta de golpe.
-        </div>
-        <div style="border: 1px solid rgba(255,255,255,0.1); padding: 15px; border-radius: 10px;">
-            <strong>Espalda:</strong> Entrelaza las manos detrás de la nuca y abre los codos hacia atrás expandiendo el pecho.
-        </div>
+    <div style="background: rgba(251, 146, 60, 0.1); border: 1px dashed var(--accent-sergio); padding: 20px; border-radius: 10px; margin: 20px 0;">
+    <p style="margin: 0; font-size: 0.95rem;">
+        <strong style="color: var(--accent-sergio);">Nota Importante:</strong> El confort ambiental no es un lujo, es una necesidad preventiva. Un entorno mal iluminado o ruidoso acaba derivando en posturas forzadas de compensación que dañan tu columna a largo plazo.
+    </p>
     </div>
 
     <h2 style="color: var(--accent-manuel);">5. Normativa Aplicable (España)</h2>
