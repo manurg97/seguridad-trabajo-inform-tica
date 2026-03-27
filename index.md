@@ -3,11 +3,6 @@ layout: default
 title: Inicio
 ---
 
----
-layout: default
-title: Inicio
----
-
 <div style="text-align: center; margin-bottom: 40px;">
     <h1 style="font-size: 3rem; margin-bottom: 10px; background: linear-gradient(90deg, #38bdf8, #4ade80, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
         Seguridad y Salud Informática
