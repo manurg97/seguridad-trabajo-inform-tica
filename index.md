@@ -82,6 +82,6 @@ Este portal ha sido diseñado como una guía técnica para profesionales y estud
 
     </div>
 
-    <div style="text-align: center; margin: 40px 0;">
-        <img src= "1.jpeg" alt="Programador trabajando con luz adecuada" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+    <div style="text-align: center; border: none; box-shadow: none;">
+        <img src="1.jpeg" alt="Programador trabajando con luz adecuada" class="img-cartoon">
     </div>
