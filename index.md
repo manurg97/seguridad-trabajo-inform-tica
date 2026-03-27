@@ -23,8 +23,14 @@ title: Inicio
     <span>📌</span> Sobre este proyecto
 </h2>
 <p style="line-height: 1.8; color: #cbd5e1;">
-    Este portal ha sido diseñado como una guía técnica para profesionales y estudiantes del sector IT. Nuestro objetivo es concienciar sobre la importancia de un entorno de trabajo seguro, abordando desde la salud física hasta la seguridad de las infraestructuras y la normativa vigente.
+    Este sitio web es el resultado del proyecto grupal para el módulo de <strong>Fundamentos del Hardware</strong>. 
+    A través de esta plataforma, presentamos una investigación detallada sobre la <strong>seguridad laboral en el sector de la informática</strong>, 
+    analizando cómo el entorno físico, las herramientas de hardware y la organización del trabajo influyen en la salud y el bienestar de los profesionales técnicos.
 </p>
+
+<div style="text-align: center; margin-top: 40px;">
+    <img src="1.jpeg" alt="Ilustración de seguridad informática" style="width: 100%; max-width: 600px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+</div>
 
 <h2 style="color: var(--text-main); font-size: 1.5rem; margin-top: 40px; display: flex; align-items: center; gap: 10px;">
     <span>🗂️</span> Bloques de Contenido
@@ -98,10 +104,5 @@ title: Inicio
 </h2>
 <p style="color: #cbd5e1;">Utiliza la <strong>barra de navegación superior</strong> para explorar cada artículo detalladamente. Cada sección contiene medidas preventivas específicas.</p>
 
-<blockquote style="background: rgba(30, 41, 59, 0.5); border-left: 4px solid #38bdf8; padding: 15px 20px; border-radius: 0 8px 8px 0; font-style: italic; color: #94a3b8; margin: 25px 0;">
-    <strong>Trabajo en equipo:</strong> Consulta la bibliografía y fuentes utilizadas en la sección de <a href="referencias.html" style="color: #38bdf8; text-decoration: none;">Referencias</a>.
-</blockquote>
 
-<div style="text-align: center; margin-top: 40px;">
-    <img src="1.jpeg" alt="Ilustración de seguridad informática" style="width: 100%; max-width: 600px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
-</div>
+
