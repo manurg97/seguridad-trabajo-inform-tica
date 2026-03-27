@@ -19,48 +19,61 @@ Este portal ha sido diseñado como una guía técnica para profesionales y estud
 
 ### 🗂️ Bloques de Contenido
 
+### 🗂️ Bloques de Contenido
+
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px;">
     
-    <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #38bdf8; display: flex; flex-direction: column; justify-content: space-between;">
-         <div>
-            <h4 style="margin-top:0; color: #38bdf8;">💻 Ergonomía</h4>
-            <p style="font-size: 0.9rem;">Análisis de posturas, mobiliario y fatiga visual en el puesto informático.</p>
+    <a href="ergonomia.html" style="text-decoration: none; color: inherit; display: flex;">
+        <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #38bdf8; display: flex; flex-direction: column; justify-content: space-between; width: 100%; transition: transform 0.2s, background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.08)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.background='rgba(255,255,255,0.03)'; this.style.transform='translateY(0)';">
+             <div>
+                <h4 style="margin-top:0; color: #38bdf8;">💻 Ergonomía</h4>
+                <p style="font-size: 0.9rem;">Análisis de posturas, mobiliario y fatiga visual en el puesto informático.</p>
+            </div>
+            <small><i>Por: Manuel</i></small>
         </div>
-        <small><i>Por: Manuel</i></small>
-    </div>
+    </a>
 
-    <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #4ade80; display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-            <h4 style="margin-top:0; color: #4ade80;">🧠 Riesgos Psicosociales</h4>
-            <p style="font-size: 0.9rem;">Gestión del estrés laboral, burnout y carga mental en el desarrollo.</p>
+    <a href="rpsicosociales.html" style="text-decoration: none; color: inherit; display: flex;">
+        <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #4ade80; display: flex; flex-direction: column; justify-content: space-between; width: 100%; transition: transform 0.2s, background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.08)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.background='rgba(255,255,255,0.03)'; this.style.transform='translateY(0)';">
+            <div>
+                <h4 style="margin-top:0; color: #4ade80;">🧠 Riesgos Psicosociales</h4>
+                <p style="font-size: 0.9rem;">Gestión del estrés laboral, burnout y carga mental en el desarrollo.</p>
+            </div>
+            <small><i>Por: Juan José</i></small>
         </div>
-        <small><i>Por: Juan José</i></small>
-    </div>
-    <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #fb923c; display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-            <h4 style="margin-top:0; color: #fb923c;">🔒 Seguridad Física</h4>
-            <p style="font-size: 0.9rem;">Protección de servidores, cableado y control de accesos a CPD.</p>
-        </div>
-        <small><i>Por: Sergio</i></small>
-    </div>
+    </a>
 
-    <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #fb923c; display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-            <h4 style="margin-top:0; color: #fb923c;">🌱 Riesgos Ambientales</h4>
-            <p style="font-size: 0.9rem;">Control de temperatura, iluminación y ruido en entornos de trabajo.</p>
+    <a href="seguridadfisica.html" style="text-decoration: none; color: inherit; display: flex;">
+        <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #fb923c; display: flex; flex-direction: column; justify-content: space-between; width: 100%; transition: transform 0.2s, background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.08)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.background='rgba(255,255,255,0.03)'; this.style.transform='translateY(0)';">
+            <div>
+                <h4 style="margin-top:0; color: #fb923c;">🔒 Seguridad Física</h4>
+                <p style="font-size: 0.9rem;">Protección de servidores, cableado y control de accesos a CPD.</p>
+            </div>
+            <small><i>Por: Sergio</i></small>
         </div>
-        <small><i>Por: Sergio</i></small>
-    </div>
-     <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #4ade80; display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-            <h4 style="margin-top:0; color: #4ade80;">🛡️ Prevención</h4>
-            <p style="font-size: 0.9rem;">Protocolos de seguridad, normativas y medidas de protección técnica.</p>
+    </a>
+
+    <a href="rambientales.html" style="text-decoration: none; color: inherit; display: flex;">
+        <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #fb923c; display: flex; flex-direction: column; justify-content: space-between; width: 100%; transition: transform 0.2s, background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.08)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.background='rgba(255,255,255,0.03)'; this.style.transform='translateY(0)';">
+            <div>
+                <h4 style="margin-top:0; color: #fb923c;">🌱 Riesgos Ambientales</h4>
+                <p style="font-size: 0.9rem;">Control de temperatura, iluminación y ruido en entornos de trabajo.</p>
+            </div>
+            <small><i>Por: Sergio</i></small>
         </div>
-        <small><i>Por: Juan José</i></small>
+    </a>
+
+    <a href="prevencion.html" style="text-decoration: none; color: inherit; display: flex;">
+        <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #4ade80; display: flex; flex-direction: column; justify-content: space-between; width: 100%; transition: transform 0.2s, background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.08)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.background='rgba(255,255,255,0.03)'; this.style.transform='translateY(0)';">
+            <div>
+                <h4 style="margin-top:0; color: #4ade80;">🛡️ Prevención</h4>
+                <p style="font-size: 0.9rem;">Protocolos de seguridad, normativas y medidas de protección técnica.</p>
+            </div>
+            <small><i>Por: Juan José</i></small>
+        </div>
+    </a>
+
     </div>
-
-</div>
-
 ---
 
 ### 🚀 Acceso Rápido
