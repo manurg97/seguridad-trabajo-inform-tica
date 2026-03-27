@@ -71,12 +71,21 @@ Este portal ha sido diseñado como una guía técnica para profesionales y estud
             </div>
             <small><i>Por: Juan José</i></small>
         </div>
+        </a>
+        <a href="referencias.html" style="text-decoration: none; color: inherit; display: flex;">
+        <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border-left: 4px solid #38bdf8; display: flex; flex-direction: column; justify-content: space-between; width: 100%; transition: transform 0.2s, background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.08)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.background='rgba(255,255,255,0.03)'; this.style.transform='translateY(0)';">
+        <div>
+                <h4 style="margin-top:0; color: #4ade80;">📖 Referencias</h4>
+                <p style="font-size: 0.9rem;"> Consulta la bibliografía y fuentes utilizadas en este proyecto.</p>
+            </div>
+            <small><i>Por:Equipo</i></small>
+        </div>
     </a>
 
     </div>
 ---
 
-### 🚀 Acceso Rápido
-Utiliza la **barra de navegación superior** para explorar cada artículo detalladamente. Cada sección contiene medidas preventivas específicas y recomendaciones basadas en la normativa de seguridad laboral.
-
-> **Trabajo en equipo:** Consulta la bibliografía y fuentes utilizadas en la sección de [Referencias](referencias.html).
+    <div style="text-align: center; margin: 40px 0;">
+        <img src="1.jpeg" alt="Programador trabajando con luz adecuada" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <p style="font-size: 0.9rem; color: #64748b; margin-top: 10px;">La iluminación debe ser cenital o lateral, evitando reflejos directos sobre la superficie de la pantalla.</p>
+    </div>
