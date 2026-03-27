@@ -10,8 +10,8 @@ title: Riesgos Ergonómicos en el Sector Informático
 
     <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;">
 
-    <h2 style="color: var(--accent-manuel);">1. Análisis de la Carga Física Dinámica y Estática</h2>
-    <p>En el desarrollo de software y sistemas, el principal problema no es el esfuerzo muscular intenso, sino la <strong>carga estática</strong>. Mantener la misma postura durante horas provoca una compresión constante de los vasos sanguíneos, dificultando el aporte de oxígeno y nutrientes al músculo.</p>
+    <h2 style="color: var(--accent-manuel);">1.Trastornos Musculoesqueléticos (TME)</h2>
+    <p>En el sector profesional de la informatica, el principal problema no es el esfuerzo muscular intenso, sino la <strong>carga estática</strong>. Mantener la misma postura durante horas provoca una compresión constante de los vasos sanguíneos, dificultando el aporte de oxígeno y nutrientes al músculo.</p>
     
     <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0;">
         <div style="flex: 1; min-width: 300px; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 10px;">
@@ -45,7 +45,14 @@ title: Riesgos Ergonómicos en el Sector Informático
         <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Programador trabajando con luz adecuada" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
         <p style="font-size: 0.9rem; color: #64748b; margin-top: 10px;">La iluminación debe ser cenital o lateral, evitando reflejos directos sobre la superficie de la pantalla.</p>
     </div>
-
+    <div style="flex: 1; min-width: 300px; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 10px;">
+            <h3 style="color: var(--accent-manuel); margin-top: 0;">Consecuencias a Corto Plazo</h3>
+            <ul>
+                <li><strong>Acomodación excesiva:</strong> El músculo ciliar del ojo está en constante tensión para enfocar de cerca, lo que genera dolores de cabeza.</li>
+                <li><strong>Sequedad ocular:</strong> Al mirar una pantalla, reducimos la frecuencia de parpadeo de 20 a unas 5-7 veces por minuto, impidiendo la lubricación natural del ojo.</li>
+                <li><strong>Deslumbramiento:</strong> Los reflejos de ventanas o luces mal situadas fuerzan la vista y provocan fatiga prematura.</li>
+            </ul>
+        </div>
     <h2 style="color: var(--accent-manuel);">3. Diseño Ergonómico del Hardware y Mobiliario</h2>
     <p>Para mitigar estos riesgos, debemos considerar el equipo como una herramienta de salud, no solo de productividad.</p>
 
