@@ -1,7 +1,7 @@
 # seguridad-trabajo-informatica
 
 **Enlace web del proyecto:**  
-(https://manurg97.github.io/seguridad-trabajo-inform-tica/)
+https://manurg97.github.io/seguridad-trabajo-inform-tica/
 
 ---
 
