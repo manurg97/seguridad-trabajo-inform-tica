@@ -149,7 +149,7 @@ title: Riesgos Ergonómicos en el Sector Informático
         line-height: 2;
     }
     .ergonomia-detallada blockquote {
-        background: rgba(30, 41, 59, 0.5);
+        background: var(--header-bg);
         border-left: 5px solid var(--accent-manuel);
         padding: 20px;
         margin: 30px 0;
