@@ -16,8 +16,8 @@
             <tbody>
                 <tr>
                     <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Legal / Normativa</strong></td>
-                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Real Decreto 488/1997, de 14 de abril, sobre disposiciones mínimas de seguridad y salud en el trabajo con pantallas de visualización.</td>
-                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1997-8661" style="color: #00BFFF; text-decoration: none;">Ver BOE</a></td>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Wikipwdia.</td>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><a href="https://es.wikipedia.org/wiki/Wiki" style="color: #00BFFF; text-decoration: none;">Ver BOE</a></td>
                 </tr>
                 <tr style="background: rgba(255,255,255,0.02);">
                     <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Guía Técnica</strong></td>
@@ -26,8 +26,7 @@
                 </tr>
                 <tr>
                     <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Ergonomía</strong></td>
-                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">ISO 9241: Requisitos ergonómicos para trabajos de oficina con pantallas de visualización de datos.</td>
-                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><a href="#" style="color: #00BFFF; text-decoration: none;">Estándar ISO</a></td>
+                  <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><a href="https://www.uv.es/cgt/prevencion/pantalla.htm" style="color: #00BFFF; text-decoration: none;">Estándar ISO</a></td>
                 </tr>
             </tbody>
         </table>
@@ -43,6 +42,5 @@
     </div>
     <div class="bottom-nav" style="margin-top: 40px;">
         <a href="index.html" class="nav-link">🏠 Volver al Inicio</a>
-        <a href="ergonomia.html" class="nav-link">⬅ Volver a Ergonomía</a>
     </div>
 </section>
