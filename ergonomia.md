@@ -12,7 +12,7 @@ title: Riesgos Ergonómicos en el Sector Informático
 
 <h2 style="color: var(--accent-manuel);">1.Trastornos Musculoesqueléticos (TME)</h2>
     <p>En el sector profesional de la informatica, el principal problema no es el esfuerzo muscular intenso, sino la <strong>carga estática</strong>. Mantener la misma postura durante horas provoca una compresión constante de los vasos sanguíneos, dificultando el aporte de oxígeno y nutrientes al músculo.</p>
-    
+
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0;">
         <div style="flex: 1; min-width: 300px; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 10px;">
             <h3 style="color: var(--accent-manuel); margin-top: 0;">Consecuencias a Corto Plazo</h3>
@@ -35,7 +35,7 @@ title: Riesgos Ergonómicos en el Sector Informático
 
 <h2 style="color: var(--accent-manuel);">2. El Síndrome Visual Informático (SVI) a Fondo</h2>
     <p>No se trata solo de cansancio. El SVI es un conjunto de problemas relacionados con la visión que afectan al 90% de las personas que pasan más de 3 horas frente a un monitor. Los factores críticos son:</p>
-    
+
 <ul>
         <li><strong>El Brillo y Contraste:</strong> Un exceso de brillo provoca deslumbramiento, mientras que un contraste bajo obliga al ojo a forzar el enfoque (acomodación).</li>
         <li><strong>Luz Azul:</strong> La longitud de onda corta emitida por pantallas LED puede alterar los ciclos de sueño (ritmos circadianos) al inhibir la melatonina.</li>
@@ -103,6 +103,7 @@ title: Riesgos Ergonómicos en el Sector Informático
     </blockquote>
 
 <div style="text-align: center; margin-top: 50px;">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80" alt="Setup de código ergonómico" style="width: 100%; border-radius: 20px; filter: grayscale(30%);">
         <img src="WEBP-PANTALLAS.JPG" alt="Setup no ergonómico" style="width: 100%; border-radius: 20px; filter: grayscale(30%);">
     </div>
     <div class="bottom-nav">
@@ -149,7 +150,7 @@ title: Riesgos Ergonómicos en el Sector Informático
         line-height: 2;
     }
     .ergonomia-detallada blockquote {
-        background: var(--header-bg);
+        background: rgba(30, 41, 59, 0.5);
         border-left: 5px solid var(--accent-manuel);
         padding: 20px;
         margin: 30px 0;
