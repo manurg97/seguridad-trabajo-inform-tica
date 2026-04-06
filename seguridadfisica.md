@@ -17,7 +17,9 @@ La <strong>seguridad física</strong> consiste en la protección de los activos 
 </p>
 
 <div style="text-align: center; margin: 40px 0;">
- <img src="/seguridad-fisica.jpg" alt="Seguridad Física" style="width: 100%; border-radius: 20px;">
+    <img src="seguridad-fisica.jpeg"
+         alt="Centro de datos seguro"
+         style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
     <p style="font-size: 0.9rem; color: #64748b; margin-top: 10px;">
         Centro de datos protegido mediante sistemas de seguridad física.
     </p>
