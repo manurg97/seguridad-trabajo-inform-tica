@@ -114,7 +114,7 @@ La <strong>seguridad física</strong> consiste en la protección de los activos 
 <!-- BOTONES -->
 <div class="bottom-nav">
     <a href="index.html" class="nav-btn home">🏠 Volver al inicio</a>
-    <a href="rambientales.html" class="nav-btn next">Siguiente ➜</a>
+    <a href="rambientales.html" class="nav-btn next">R.ambientales ➜</a>
 </div>
 
 </section>
