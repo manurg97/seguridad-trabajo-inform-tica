@@ -1,134 +1,48 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referencias - Salud Laboral</title>
-    
-<style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f7f6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+<section class="ergonomia-detallada">
+    <h2 style="color: var(--accent-manuel);">Fuentes y Referencias Bibliográficas</h2>
+    <p>Para la elaboración de este recurso formativo se han consultado fuentes oficiales de organismos de salud laboral y normativa vigente en materia de seguridad informática.</p>
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
+<hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;">
 
-        h1 {
-            color: #00BFFF; /* Celeste */
-            text-align: center;
-        }
+ <div style="overflow-x: auto; margin: 30px 0;">
+        <table style="width: 100%; border-collapse: collapse; background: rgba(30, 41, 59, 0.3); border-radius: 12px; overflow: hidden;">
+            <thead>
+                <tr style="background-color: rgba(56, 189, 248, 0.2); color: var(--accent-manuel);">
+                    <th style="padding: 15px; text-align: left; border-bottom: 2px solid var(--accent-manuel);">Tipo de Fuente</th>
+                    <th style="padding: 15px; text-align: left; border-bottom: 2px solid var(--accent-manuel);">Referencia / Documento</th>
+                    <th style="padding: 15px; text-align: left; border-bottom: 2px solid var(--accent-manuel);">Enlace de Interés</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Legal / Normativa</strong></td>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Real Decreto 488/1997, de 14 de abril, sobre disposiciones mínimas de seguridad y salud en el trabajo con pantallas de visualización.</td>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1997-8661" style="color: #00BFFF; text-decoration: none;">Ver BOE</a></td>
+                </tr>
+                <tr style="background: rgba(255,255,255,0.02);">
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Guía Técnica</strong></td>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Guía técnica para la evaluación y prevención de los riesgos relativos a la utilización de equipos con pantallas de visualización (INSST).</td>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><a href="https://www.insst.es/" style="color: #00BFFF; text-decoration: none;">Web INSST</a></td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong>Ergonomía</strong></td>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">ISO 9241: Requisitos ergonómicos para trabajos de oficina con pantallas de visualización de datos.</td>
+                    <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);"><a href="#" style="color: #00BFFF; text-decoration: none;">Estándar ISO</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #00BFFF;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-
-        .ref-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .ref-list li {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #f9f9f9;
-            border-left: 5px solid #00BFFF;
-            border-radius: 5px;
-        }
-
-        .ref-list strong {
-            display: block;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-        }
-
-        .ref-list a {
-            color: #00BFFF;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .ref-list a:hover {
-            text-decoration: underline;
-        }
-
-        
-        .bottom-nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 40px 20px;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            color: #00BFFF;
-            font-weight: bold;
-            padding: 10px 20px;
-            border: 2px solid #00BFFF;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
-
-        .nav-link:hover {
-            background-color: #00BFFF;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-
-<main class="container">
-        <h1>📚 Linkografía y Referencias</h1>
-        <p>Fuentes oficiales y herramientas utilizadas para este proyecto de salud laboral:</p>
-
-<section>
-            <ul class="ref-list">
-                <li>
-                    <strong>Universidad de Valencia:</strong> 
-                    Guía técnica sobre prevención en pantallas de visualización.
-                    <br>
-                    <a href="https://www.uv.es/cgt/prevencion/pantalla.htm" target="_blank">🔗 Visitar sitio</a>
-                </li>
-
-<li>
-     <strong>Wikipedia:</strong> 
-     Definiciones de Ergonomía y Riesgos Psicosociales.
-     <br>
-     <a href="https://es.wikipedia.org/wiki/Ergonomía" target="_blank">🔗 Leer más</a>
- </li>
-
-<li>
-    <strong>Gemini (Google AI):</strong> 
-    Asistencia en la redacción de contenidos y depuración de código HTML/CSS.
- </li>
-
- <li>
-                    <strong>INSST:</strong> 
-                    Instituto Nacional de Seguridad y Salud en el Trabajo (España).
-                    <br>
-                    <a href="https://www.insst.es/" target="_blank">🔗 Web Oficial</a>
-                </li>
-            </ul>
-        </section>
-    </main>
-
- <div class="bottom-nav">
+<div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 10px; border-left: 4px solid var(--accent-sergio);">
+        <h3 style="color: var(--accent-sergio); margin-top: 0;">Recursos Digitales</h3>
+        <ul style="line-height: 1.8;">
+            <li><strong>Imágenes:</strong> <a href="https://unsplash.com" style="color: #cbd5e1;">Unsplash</a> (Bajo licencia Creative Commons).</li>
+            <li><strong>Iconografía:</strong> SVG Custom Path / Google Icons.</li>
+            <li><strong>Documentación:</strong> Ministerio de Trabajo y Economía Social de España.</li>
+        </ul>
+    </div>
+    <div class="bottom-nav" style="margin-top: 40px;">
         <a href="index.html" class="nav-link">🏠 Volver al Inicio</a>
- </div>
-
-</body>
-</html>
+        <a href="ergonomia.html" class="nav-link">⬅ Volver a Ergonomía</a>
+    </div>
+</section>
