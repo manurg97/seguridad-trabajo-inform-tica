@@ -1,5 +1,5 @@
 <section class="ergonomia-detallada">
-    <h2 style="color: var(--accent-manuel);">4. Licuografía y Referencias</h2>
+    <h2 style="color: var(--accent-manuel);">Referencias</h2>
     <p>Consulta las fuentes digitales y herramientas de IA utilizadas para la recopilación de datos y validación de conceptos sobre ergonomía e higiene postural.</p>
 
 <div style="overflow-x: auto; margin: 30px 0;">
