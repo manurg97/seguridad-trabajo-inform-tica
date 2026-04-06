@@ -18,7 +18,7 @@ Mantener los servidores en <strong>18°C a 24°C</strong> y la humedad relativa 
 </p>
 
 <div style="text-align: center; margin: 40px 0;">
-    <img src="<<ImageDisplayed>>"
+    <img src="rambientales.jpg"
          alt="Sala de servidores climatizada"
          style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
     <p style="font-size: 0.9rem; color: #64748b; margin-top: 10px;">
