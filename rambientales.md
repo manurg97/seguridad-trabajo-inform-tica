@@ -6,85 +6,87 @@ title: Riesgos Ambientales en Informática
 <section class="riesgos-ambientales">
 
 <p style="font-size: 1.2rem; color: var(--accent-sergio); font-weight: 500;">
-Los riesgos ambientales en el sector informático incluyen factores externos que pueden afectar la operación de los equipos y la salud de las personas. Su prevención es clave para mantener la integridad del sistema y el bienestar del personal.
+Los riesgos ambientales en informática se refieren a las condiciones físicas del entorno que pueden afectar la operación de los sistemas, la integridad de los equipos y la salud de los trabajadores.
 </p>
 
 <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;">
 
 <h2 style="color: var(--accent-sergio);">1. Temperatura y Humedad</h2>
 <p>
-El calor excesivo puede causar fallos en los equipos y afectar el rendimiento, mientras que la humedad elevada puede provocar corrosión y cortocircuitos.
+Un control inadecuado de <strong>temperatura</strong> y <strong>humedad</strong> puede afectar tanto al hardware como al rendimiento del personal.  
+Mantener los servidores en <strong>18°C a 24°C</strong> y la humedad relativa entre <strong>45% y 60%</strong> es lo ideal.
 </p>
 
-<h2 style="color: var(--accent-sergio);">2. Calidad del Aire</h2>
+<div style="text-align: center; margin: 40px 0;">
+    <img src="<<ImageDisplayed>>"
+         alt="Sala de servidores climatizada"
+         style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+    <p style="font-size: 0.9rem; color: #64748b; margin-top: 10px;">
+        Sala de servidores con climatización adecuada para proteger los equipos y garantizar su rendimiento.
+    </p>
+</div>
+
+<h2 style="color: var(--accent-sergio);">2. Iluminación y Ventilación</h2>
+<ul>
+    <li>Iluminación suficiente y sin reflejos que provoquen fatiga visual.</li>
+    <li>Ventilación constante para evitar sobrecalentamiento y acumulación de polvo.</li>
+</ul>
+
+<h2 style="color: var(--accent-sergio);">3. Ruido y Vibraciones</h2>
 <p>
-El polvo y contaminantes pueden acumularse en el hardware, reduciendo su vida útil y provocando sobrecalentamientos.
+El ruido excesivo de equipos o vibraciones pueden afectar la concentración del personal y el correcto funcionamiento de algunos dispositivos sensibles.
 </p>
 
-<h2 style="color: var(--accent-sergio);">3. Ruido</h2>
+<h2 style="color: var(--accent-sergio);">4. Contaminación y Polvo</h2>
 <p>
-Los niveles altos de ruido en el ambiente laboral generan estrés y dificultan la concentración, afectando la productividad y salud mental.
+El polvo, humo o partículas en el aire pueden provocar fallos eléctricos y degradación de componentes. Se recomienda:
 </p>
+<ul>
+    <li>Filtros de aire y limpieza periódica de salas.</li>
+    <li>Protección de equipos con carcasas cerradas.</li>
+</ul>
 
-<h2 style="color: var(--accent-sergio);">4. Iluminación</h2>
-<p>
-Una iluminación inadecuada puede causar fatiga visual y posturas incómodas que derivan en problemas musculoesqueléticos.
-</p>
-
-<h2 style="color: var(--accent-sergio);">5. Prevención y Medidas de Control</h2>
+<h2 style="color: var(--accent-sergio);">5. Métodos de Prevención</h2>
 
 <div style="overflow-x: auto; margin: 30px 0;">
 <table style="width: 100%; border-collapse: collapse; background: rgba(30, 41, 59, 0.3); border-radius: 12px; overflow: hidden;">
     <thead>
-        <tr style="background-color: rgba(56, 189, 248, 0.2); color: var(--accent-sergio);">
-            <th style="padding: 15px;">Riesgo</th>
-            <th style="padding: 15px;">Medida Preventiva</th>
+        <tr style="background-color: rgba(251, 146, 60, 0.2); color: var(--accent-sergio);">
+            <th style="padding: 15px;">Riesgo Ambiental</th>
+            <th style="padding: 15px;">Prevención / Solución</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 15px;">Temperatura excesiva</td>
-            <td style="padding: 15px;">Climatización y ventilación adecuadas</td>
+            <td style="padding: 15px;">Temperatura y Humedad</td>
+            <td style="padding: 15px;">Control climático mediante aire acondicionado, humidificadores y deshumidificadores.</td>
         </tr>
         <tr style="background: rgba(255,255,255,0.02);">
-            <td style="padding: 15px;">Humedad alta</td>
-            <td style="padding: 15px;">Control y monitoreo de humedad ambiental</td>
+            <td style="padding: 15px;">Polvo y partículas</td>
+            <td style="padding: 15px;">Filtros HEPA, limpieza periódica y sellado de gabinetes.</td>
         </tr>
         <tr>
-            <td style="padding: 15px;">Acumulación de polvo</td>
-            <td style="padding: 15px;">Limpieza regular y filtros en sistemas de aire</td>
+            <td style="padding: 15px;">Ruido y Vibraciones</td>
+            <td style="padding: 15px;">Aislamiento acústico, colocación de equipos sobre bases antivibración.</td>
         </tr>
         <tr style="background: rgba(255,255,255,0.02);">
-            <td style="padding: 15px;">Ruido elevado</td>
-            <td style="padding: 15px;">Acondicionamiento acústico y uso de auriculares</td>
-        </tr>
-        <tr>
-            <td style="padding: 15px;">Iluminación deficiente</td>
-            <td style="padding: 15px;">Uso de luz natural y luminarias regulables</td>
+            <td style="padding: 15px;">Iluminación</td>
+            <td style="padding: 15px;">Luz natural o LED regulable y sin reflejos directos sobre pantallas.</td>
         </tr>
     </tbody>
 </table>
 </div>
 
-<div style="background: rgba(251, 146, 60, 0.1); border: 1px dashed var(--accent-sergio); padding: 20px; border-radius: 10px; margin: 20px 0;">
+<div style="background: rgba(56, 189, 248, 0.1); border: 1px dashed var(--accent-sergio); padding: 20px; border-radius: 10px; margin: 20px 0;">
     <p>
-        <strong>Nota:</strong> Mantener un ambiente controlado mejora la vida útil del equipo y protege la salud del personal, evitando problemas a largo plazo.
-    </p>
-</div>
-
-<div style="text-align: center; margin: 40px 0;">
-    <img src="/rambientales.jpg"
-         alt="Sala de servidores con climatización"
-         style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-    <p style="font-size: 0.9rem; color: #64748b; margin-top: 10px;">
-        Un ambiente con temperatura y humedad controladas garantiza el correcto funcionamiento del hardware.
+        <strong>Nota:</strong> Un entorno controlado no solo protege los equipos, también mejora la productividad y reduce riesgos para los trabajadores.
     </p>
 </div>
 
 <!-- BOTONES -->
 <div class="bottom-nav">
-    <a href="seguridad-fisica.html" class="nav-btn home">⬅️ Volver a Seguridad Física</a>
-    <a href="rpsicosociales.html" class="nav-btn next">Siguiente: Riesgos Psicosociales ➜</a>
+    <a href="index.html" class="nav-btn home">🏠 Volver al inicio</a>
+    <a href="referencias.html" class="nav-btn next">Referencias ➜</a>
 </div>
 
 </section>
@@ -114,10 +116,9 @@ Una iluminación inadecuada puede causar fatiga visual y posturas incómodas que
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-    white-space: nowrap;
 }
 
-/* Botón volver */
+/* Botón inicio */
 .home {
     background: #334155;
     color: white;
@@ -127,7 +128,7 @@ Una iluminación inadecuada puede causar fatiga visual y posturas incómodas que
     background: #475569;
 }
 
-/* Botón siguiente destacado */
+/* Botón siguiente (destacado) */
 .next {
     background: linear-gradient(90deg, #38bdf8, #4ade80);
     color: #0f172a;
