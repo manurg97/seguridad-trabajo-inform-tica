@@ -85,7 +85,7 @@ El polvo, humo o partículas en el aire pueden provocar fallos eléctricos y deg
 
 <!-- BOTONES -->
 <div class="bottom-nav">
-    <a href="index.html" class="nav-btn home">🏠 Volver al inicio</a>
+    <a href="seguridad-fisica.html" class="nav-btn home">⬅ Volver a Seguridad Física</a>
     <a href="referencias.html" class="nav-btn next">Referencias ➜</a>
 </div>
 
@@ -118,7 +118,7 @@ El polvo, humo o partículas en el aire pueden provocar fallos eléctricos y deg
     transition: 0.3s;
 }
 
-/* Botón inicio */
+/* Botón volver a página anterior */
 .home {
     background: #334155;
     color: white;
