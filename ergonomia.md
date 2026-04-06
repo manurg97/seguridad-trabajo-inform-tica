@@ -117,7 +117,7 @@ title: Riesgos Ergonómicos en el Sector Informático
     justify-content: center; 
     gap: 20px;              
     padding: 20px;
-    background-color: #f0f8ff; 
+    background-color: var(--header-bg); 
 
 .nav-link {
     text-decoration: none;   
@@ -129,7 +129,7 @@ title: Riesgos Ergonómicos en el Sector Informático
 }
 
 .nav-link:hover {
-    background-color: #00BFFF;
+    background-color: var(--header-bg);
     color: white;
 }
     .ergonomia-detallada {
