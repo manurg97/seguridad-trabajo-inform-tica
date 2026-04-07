@@ -83,15 +83,47 @@ El polvo, humo o partículas en el aire pueden provocar fallos eléctricos y deg
     </p>
 </div>
 
-<!-- BOTONES -->
+<!-- BOTÓN -->
 <div class="bottom-nav">
-    <a href="{{ '/seguridad-fisica/' | relative_url }}" class="nav-btn home">
-        ⬅ Volver a Seguridad Física
-    </a>
-
-    <a href="{{ '/referencias/' | relative_url }}" class="nav-btn next">
-        Referencias ➜
-    </a>
+    <a href="referencias.html" class="nav-btn next">Referencias ➜</a>
 </div>
 
 </section>
+
+<style>
+.riesgos-ambientales {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+}
+
+.riesgos-ambientales h2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid rgba(251, 146, 60, 0.2);
+    padding-bottom: 10px;
+}
+
+/* BOTÓN */
+.bottom-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.nav-btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.next {
+    background: linear-gradient(90deg, #38bdf8, #4ade80);
+    color: #0f172a;
+}
+
+.next:hover {
+    transform: scale(1.05);
+}
+</style>
