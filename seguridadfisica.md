@@ -20,7 +20,6 @@ La <strong>seguridad física</strong> consiste en la protección de los activos 
     <img src="seguridad-fisica.jpeg"
          alt="Centro de datos seguro"
          style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-
 </div>
 
 <h2 style="color: var(--accent-sergio);">2. Objetivos Principales</h2>
@@ -113,56 +112,15 @@ La <strong>seguridad física</strong> consiste en la protección de los activos 
 
 <!-- BOTONES -->
 <div class="bottom-nav">
-    <a href="index.html" class="nav-btn home">🏠 Volver al inicio</a>
-    <a href="rambientales.html" class="nav-btn next">R.Ambientales ➜</a>
+
+    <a href="{{ '/' | relative_url }}" class="nav-btn home">
+        🏠 Volver al inicio
+    </a>
+
+    <a href="{{ '/rambientales/' | relative_url }}" class="nav-btn next">
+        R.Ambientales ➜
+    </a>
+
 </div>
 
 </section>
-
-<style>
-.seguridad-fisica {
-    font-size: 1.05rem;
-    color: #cbd5e1;
-}
-
-.seguridad-fisica h2 {
-    margin-top: 2rem;
-    border-bottom: 1px solid rgba(251, 146, 60, 0.2);
-    padding-bottom: 10px;
-}
-
-/* BOTONES */
-.bottom-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.nav-btn {
-    padding: 12px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-/* Botón inicio */
-.home {
-    background: #334155;
-    color: white;
-}
-
-.home:hover {
-    background: #475569;
-}
-
-/* Botón siguiente (destacado) */
-.next {
-    background: linear-gradient(90deg, #38bdf8, #4ade80);
-    color: #0f172a;
-}
-
-.next:hover {
-    transform: scale(1.05);
-}
-</style>
