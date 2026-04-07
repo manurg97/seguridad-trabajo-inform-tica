@@ -110,17 +110,46 @@ La <strong>seguridad física</strong> consiste en la protección de los activos 
     </p>
 </div>
 
-<!-- BOTONES -->
+<!-- BOTÓN -->
 <div class="bottom-nav">
-
-    <a href="{{ '/' | relative_url }}" class="nav-btn home">
-        🏠 Volver al inicio
-    </a>
-
-    <a href="{{ '/rambientales/' | relative_url }}" class="nav-btn next">
-        R.Ambientales ➜
-    </a>
-
+    <a href="rambientales.html" class="nav-btn next">R.Ambientales ➜</a>
 </div>
 
 </section>
+
+<style>
+.seguridad-fisica {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+}
+
+.seguridad-fisica h2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid rgba(251, 146, 60, 0.2);
+    padding-bottom: 10px;
+}
+
+/* BOTÓN */
+.bottom-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.nav-btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.next {
+    background: linear-gradient(90deg, #38bdf8, #4ade80);
+    color: #0f172a;
+}
+
+.next:hover {
+    transform: scale(1.05);
+}
+</style>
