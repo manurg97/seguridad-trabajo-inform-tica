@@ -1,155 +1,313 @@
----
-layout: default
-title: Seguridad Física
----
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R. Ergonómicos | Seguridad Informática</title>
 
-<section class="seguridad-fisica">
+    <style>
+        :root {
+            --bg-body: #0f172a;
+            --bg-card: #1e293b;
+            --header-bg: #1e293b;
+            --text-main: #f1f5f9;
+            --accent-sergio: #fb923c;
+            --accent-juanjo: #4ade80;
+        }
 
-<p style="font-size: 1.2rem; color: var(--accent-sergio); font-weight: 500;">
-La seguridad física en informática se encarga de proteger los equipos, infraestructuras y personas frente a accesos no autorizados, robos o daños, garantizando la continuidad del servicio.
-</p>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-<hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;">
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: var(--header-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1001;
+        }
 
-<h2 style="color: var(--accent-sergio);">1. ¿Qué es la Seguridad Física?</h2>
-<p>
-La <strong>seguridad física</strong> consiste en la protección de los activos físicos de un sistema informático, incluyendo instalaciones, hardware y personas.
-</p>
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: linear-gradient(
+                90deg,
+                var(--accent-sergio),
+                var(--accent-juanjo)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-<div style="text-align: center; margin: 40px 0;">
-    <img src="seguridad-fisica.jpeg"
-         alt="Centro de datos seguro"
-         style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-</div>
+        .autor {
+            position: absolute;
+            right: 20px;
+            color: var(--accent-sergio);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
 
-<h2 style="color: var(--accent-sergio);">2. Objetivos Principales</h2>
-<ul>
-    <li>Proteger a las personas.</li>
-    <li>Evitar daños o robos de equipos.</li>
-    <li>Garantizar la continuidad del servicio.</li>
-    <li>Prevenir y responder ante incidentes.</li>
-</ul>
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
 
-<h2 style="color: var(--accent-sergio);">3. Infraestructura y Equipos</h2>
+        main {
+            width: 100%;
+            max-width: 1000px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0;">
-    <div style="flex: 1; min-width: 250px; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 10px;">
-        <h3>Equipos críticos</h3>
-        <ul>
-            <li>Servidores</li>
-            <li>Ordenadores</li>
-            <li>Dispositivos de red</li>
-        </ul>
+        .content-area {
+            background: var(--bg-card);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            line-height: 1.8;
+        }
+
+        .ergonomia-detallada {
+            font-size: 1.05rem;
+            color: #cbd5e1;
+        }
+
+        .ergonomia-detallada h2 {
+            margin-top: 2rem;
+            border-bottom: 1px solid rgba(251, 146, 60, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .ergonomia-detallada img {
+            transition: transform 0.4s ease;
+        }
+
+        .ergonomia-detallada img:hover {
+            transform: scale(1.01);
+        }
+
+        .ergonomia-detallada blockquote {
+            background: rgba(30, 41, 59, 0.5);
+            border-left: 5px solid var(--accent-sergio);
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            border-radius: 10px;
+        }
+
+        .card-box {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255,255,255,0.03);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card-box:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 50px;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .next {
+            background: linear-gradient(90deg, #fb923c, #facc15);
+            color: #0f172a;
+        }
+
+        .next:hover {
+            transform: scale(1.05);
+        }
+
+        table tr:hover {
+            background: rgba(255,255,255,0.04);
+            transition: 0.3s;
+        }
+
+        @media (max-width: 800px) {
+            .content-area {
+                padding: 30px;
+            }
+
+            .autor {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Seguridad Informática</h1>
+        <div class="autor">Hecho por Sergio</div>
+    </header>
+
+    <div class="wrapper">
+        <main>
+            <article class="content-area">
+
+                <h1 style="margin-top: 0; font-size: 2rem; color: var(--accent-sergio);">
+                    Riesgos Ergonómicos
+                </h1>
+
+                <p style="
+                    margin-top:-10px;
+                    margin-bottom:30px;
+                    color: var(--accent-sergio);
+                    font-weight:600;
+                    letter-spacing:1px;
+                ">
+                    ✦ Página realizada por Sergio
+                </p>
+
+                <p style="font-size: 1.2rem; color: var(--accent-sergio); font-weight: 500;">
+                    La ergonomía informática es la disciplina que busca adaptar el entorno de trabajo
+                    (hardware, mobiliario y software) a las capacidades y limitaciones físicas del usuario.
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;">
+
+                <section class="ergonomia-detallada">
+
+                    <h2 style="color: var(--accent-sergio);">
+                        1. Trastornos Musculoesqueléticos (TME)
+                    </h2>
+
+                    <p>
+                        En el sector profesional de la informática, el principal problema no es
+                        el esfuerzo muscular intenso, sino la <strong>carga estática</strong>.
+                        Mantener la misma postura durante horas provoca una compresión constante
+                        de los vasos sanguíneos, dificultando el aporte de oxígeno y nutrientes al músculo.
+                    </p>
+
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0;">
+
+                        <div class="card-box">
+                            <h3 style="color: var(--accent-sergio); margin-top: 0;">
+                                Consecuencias a Corto Plazo
+                            </h3>
+
+                            <ul>
+                                <li>Pesadez muscular y entumecimiento.</li>
+                                <li>Contracturas en la zona del trapecio.</li>
+                                <li>Hormigueo en extremidades superiores.</li>
+                                <li>Cefaleas tensionales.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-box">
+                            <h3 style="color: var(--accent-sergio); margin-top: 0;">
+                                Patologías Crónicas
+                            </h3>
+
+                            <ul>
+                                <li><strong>Cifosis dorsal:</strong> Curvatura excesiva.</li>
+                                <li><strong>Epicondilitis:</strong> Codo de tenista.</li>
+                                <li><strong>Hernias discales:</strong> Presión desigual.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <h2 style="color: var(--accent-sergio);">
+                        2. El Síndrome Visual Informático (SVI)
+                    </h2>
+
+                    <p>
+                        Afecta al 90% de las personas que pasan más de 3 horas frente a un monitor.
+                        Los factores críticos son el brillo, el contraste y la luz azul.
+                    </p>
+
+                    <div style="text-align: center; margin: 40px 0;">
+                        <img
+                            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                            alt="Luz adecuada"
+                            style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);"
+                        >
+                    </div>
+
+                    <h2 style="color: var(--accent-sergio);">
+                        3. Factores Ambientales
+                    </h2>
+
+                    <div style="overflow-x: auto; margin: 30px 0;">
+
+                        <table style="
+                            width: 100%;
+                            border-collapse: collapse;
+                            background: rgba(30, 41, 59, 0.3);
+                            border-radius: 12px;
+                            overflow: hidden;
+                        ">
+
+                            <thead>
+                                <tr style="
+                                    background-color: rgba(251, 146, 60, 0.2);
+                                    color: var(--accent-sergio);
+                                ">
+                                    <th style="padding: 15px; text-align: left;">Factor</th>
+                                    <th style="padding: 15px; text-align: left;">Solución</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 15px;"><strong>Temperatura</strong></td>
+                                    <td style="padding: 15px;">Estable entre 20°C y 24°C.</td>
+                                </tr>
+
+                                <tr style="background: rgba(255,255,255,0.02);">
+                                    <td style="padding: 15px;"><strong>Sedentarismo</strong></td>
+                                    <td style="padding: 15px;">Pausas activas cada 60 min.</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <blockquote>
+                        "El empresario tiene la obligación de evaluar los riesgos y proporcionar formación."
+                    </blockquote>
+
+                    <div class="bottom-nav">
+                        <a href="rpsicosociales.html" class="nav-btn next">
+                            R.Psicosociales ➜
+                        </a>
+                    </div>
+
+                </section>
+
+            </article>
+        </main>
     </div>
 
-    <div style="flex: 1; min-width: 250px; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 10px;">
-        <h3>Elementos físicos</h3>
-        <ul>
-            <li>Cableado</li>
-            <li>Racks</li>
-            <li>Sistemas eléctricos</li>
-        </ul>
-    </div>
-</div>
-
-<h2 style="color: var(--accent-sergio);">4. Equipos Móviles</h2>
-<ul>
-    <li>Pérdida de dispositivos</li>
-    <li>Robo</li>
-    <li>Acceso no autorizado</li>
-</ul>
-
-<h2 style="color: var(--accent-sergio);">5. Métodos de Protección</h2>
-
-<div style="overflow-x: auto; margin: 30px 0;">
-<table style="width: 100%; border-collapse: collapse; background: rgba(30, 41, 59, 0.3); border-radius: 12px; overflow: hidden;">
-    <thead>
-        <tr style="background-color: rgba(251, 146, 60, 0.2); color: var(--accent-sergio);">
-            <th style="padding: 15px;">Medida</th>
-            <th style="padding: 15px;">Descripción</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="padding: 15px;">Control de acceso</td>
-            <td style="padding: 15px;">Tarjetas, biometría o vigilancia.</td>
-        </tr>
-        <tr style="background: rgba(255,255,255,0.02);">
-            <td style="padding: 15px;">CCTV</td>
-            <td style="padding: 15px;">Cámaras y sensores.</td>
-        </tr>
-        <tr>
-            <td style="padding: 15px;">Protección hardware</td>
-            <td style="padding: 15px;">Cerraduras y anclajes.</td>
-        </tr>
-        <tr style="background: rgba(255,255,255,0.02);">
-            <td style="padding: 15px;">Desastres</td>
-            <td style="padding: 15px;">Incendios, UPS, climatización.</td>
-        </tr>
-    </tbody>
-</table>
-</div>
-
-<h2 style="color: var(--accent-sergio);">6. Protección de Datos</h2>
-<ul>
-    <li>🔐 Cifrado</li>
-    <li>💾 Copias de seguridad</li>
-    <li>🔑 Control de accesos</li>
-</ul>
-
-<h2 style="color: var(--accent-sergio);">7. Factor Humano</h2>
-<ul>
-    <li>No dejar equipos solos</li>
-    <li>Bloquear sesión</li>
-    <li>No compartir credenciales</li>
-</ul>
-
-<div style="background: rgba(56, 189, 248, 0.1); border: 1px dashed var(--accent-sergio); padding: 20px; border-radius: 10px; margin: 20px 0;">
-    <p>
-        <strong>Conclusión:</strong> La seguridad física es esencial para proteger sistemas informáticos y evitar vulnerabilidades críticas.
-    </p>
-</div>
-
-<!-- BOTÓN -->
-<div class="bottom-nav">
-    <a href="rambientales.html" class="nav-btn next">R.Ambientales ➜</a>
-</div>
-
-</section>
-
-<style>
-.seguridad-fisica {
-    font-size: 1.05rem;
-    color: #cbd5e1;
-}
-
-.seguridad-fisica h2 {
-    margin-top: 2rem;
-    border-bottom: 1px solid rgba(251, 146, 60, 0.2);
-    padding-bottom: 10px;
-}
-
-/* BOTÓN */
-.bottom-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 50px;
-}
-
-.nav-btn {
-    padding: 12px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.next {
-    background: linear-gradient(90deg, #38bdf8, #4ade80);
-    color: #0f172a;
-}
-
-.next:hover {
-    transform: scale(1.05);
-}
-</style>
+</body>
+</html>
