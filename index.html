@@ -1,3 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la Página | Seguridad Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- El layout se cargará aquí dentro -->
+    <div id="layout-placeholder"></div>
+
+    <div class="wrapper">
+        <main>
+            <article class="content-area">
+                <h1 style="margin-top: 0; font-size: 2rem;">Título de la Sección</h1>
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 30px;">
+                
+                <!-- ESCRIBE TU CONTENIDO AQUÍ -->
+                <p>Aquí va toda la información de la página...</p>
+                
+            </article>
+        </main>
+    </div>
+
+    <script>
+        // Este script carga el archivo layout.html y lo mete en el div de arriba
+        fetch('layout.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('layout-placeholder').innerHTML = data;
+            })
+            .catch(err => console.error("Error cargando el layout", err));
+    </script>
+</body>
+</html>
+
+
+
 <div style="text-align: center; margin-bottom: 40px;">
     <h1 style="font-size: 3rem; margin-bottom: 10px; background: linear-gradient(90deg, #38bdf8, #4ade80, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
         Seguridad y Salud Informática
